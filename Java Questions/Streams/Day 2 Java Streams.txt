@@ -1,0 +1,65 @@
+Day 2: Java Streams — Intermediate Challenges
+Problem 1 — Group by a property (groupingBy + counting / toList)
+
+Statement:
+You are given a List<String> of words. Write a method groupWordsByLength(List<String> words) that returns a Map<Integer, List<String>>, where the key is the word length, and the value is the list of words with that length.
+
+Example Input:
+["apple", "banana", "car", "dog", "pear", "hi", "bye"]
+Expected Output (order of values/lists may vary):
+
+{
+  5: ["apple", "pear"],
+  6: ["banana"],
+  3: ["car", "dog", "bye"],
+  2: ["hi"]
+}
+
+
+Also write a version countWordsByLength(List<String> words) that returns Map<Integer, Long> — length → count of words with that length.
+
+Problem 2 — Partitioning by predicate
+
+Statement:
+Given a List<Integer> of numbers, write a method partitionEvenOdd(List<Integer> numbers) that returns a Map<Boolean, List<Integer>>, partitioning numbers into evens (true) and odds (false) using streams.
+
+Example Input:
+[1, 2, 3, 4, 5, 6, 7]
+Expected Output:
+
+{
+  true:  [2, 4, 6],
+  false: [1, 3, 5, 7]
+}
+
+Problem 3 — Flatten nested collections (flatMap)
+
+Statement:
+You have a List<List<Integer>> (a list of integer-lists). Write a method flatten(List<List<Integer>> nested) that returns a single List<Integer> containing all integers from the sub-lists, in order.
+
+Example Input:
+[[1, 2, 3], [4, 5], [6, 7, 8]]
+Expected Output:
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+Problem 4 — Find second largest (or second highest) number (distinct + sorted + skip)
+
+Statement:
+Given a List<Integer> of numbers (may contain duplicates), write a method findSecondLargest(List<Integer> numbers) that returns an Optional<Integer> with the second largest unique value — or empty if no such value exists — using Streams.
+
+Example Inputs / Outputs:
+
+[10, 20, 5, 30, 15] → Optional.of(20)
+
+[5, 5, 5] → Optional.empty() (since there's no second largest unique number)
+
+Problem 5 — Given list of comma-separated number-strings, flatten + parse + filter + sort
+
+Statement:
+You are given a List<String> where each string itself contains comma-separated numbers (some entries may be non-numeric or invalid).
+Write a method parseAndSortUniqueNumbers(List<String> input) that returns a List<Integer> of unique valid integers, sorted in descending order, ignoring invalid entries, using streams.
+
+Example Input:
+["1,2,3", "3,4,5", "6,abc,7", "8,9,10", "10,2,4"]
+Expected Output:
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
