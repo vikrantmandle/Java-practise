@@ -1,0 +1,68 @@
+Problem 1 — Filter Even Numbers
+
+Statement:
+You are given a list of integers representing daily website visit counts. Some values are odd and some even.
+Write a method getEvenNumbers(List<Integer> numbers) that returns a new list containing only the even numbers, using Java Streams.
+
+Example Input:
+[10, 15, 22, 7, 30]
+Expected Output:
+[10, 22, 30]
+
+Problem 2 — Convert Words to Their Lengths
+
+Statement:
+You are given a list of words typed by users into a search bar.
+Write a method mapWordsToLength(List<String> words) that converts each word into its corresponding length and returns a list of integers.
+
+Example Input:
+["java", "developer", "stream"]
+Expected Output:
+[4, 9, 6]
+
+Problem 3 — Remove Duplicate Integers
+
+Statement:
+Given a list of integers representing product IDs viewed by a user (the list may contain duplicates),
+write a method removeDuplicates(List<Integer> ids) that returns a list of unique IDs, preserving the original order.
+
+Example Input:
+[4, 5, 4, 7, 5, 9]
+Expected Output:
+[4, 5, 7, 9]
+
+Problem 4 — Find Maximum and Minimum
+
+Statement:
+Given a list of integers representing scores in a coding challenge,
+write a method findMinMax(List<Integer> scores) that returns a pair (min, max) using streams.
+
+You may define:
+
+a custom Pair class, or
+
+return a list/array of size 2, or
+
+return an OptionalInt[].
+
+Example Input:
+[40, 10, 90, 70, 20]
+Expected Output:
+min = 10, max = 90
+
+Problem 5 — Calculate Sum and Average
+
+Statement:
+You are given a list of integers representing monthly expenses.
+Write a method calculateSumAndAverage(List<Integer> expenses) using Java Streams to compute:
+
+The sum of all elements
+
+The average (as double)
+
+Return them as a custom object or a pair.
+
+Example Input:
+[1000, 1500, 1200, 1800]
+Expected Output:
+sum = 5500, average = 1375.0
