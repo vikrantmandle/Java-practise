@@ -37,6 +37,7 @@ public class Day1 {
 
 		long count = fruits.stream().distinct().count();
 		Set<String> uniqueFruits = new HashSet<>(fruits);
+
 		Map<String, Long> fruitOccurances = fruits.stream().collect(Collectors.groupingBy(f -> f, Collectors.counting()));
 
 		System.out.println("Count of Unique fruits = " + count);
